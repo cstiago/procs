@@ -1,4 +1,6 @@
 # https://medium.com/@satriajanaka09/setup-zsh-oh-my-zsh-powerlevel10k-on-ubuntu-20-04-c4a4052508fd
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet
+# https://github.com/romkatv/powerlevel10k
 
 # install zsh
 sudo apt install zsh
@@ -30,3 +32,6 @@ wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20R
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+
+# reload ohmyzsh
+omz reload

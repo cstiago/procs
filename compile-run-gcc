@@ -1,0 +1,14 @@
+# install essential tools for building packages
+sudo apt install build-essential
+
+# or only gcc
+sudo apt install gcc
+
+# verify gcc installation
+gcc --version
+
+# compile source code to executable
+gcc -o executable program.cpp
+
+# run executable
+./executable
