@@ -1,0 +1,16 @@
+# r - read (4)
+# w - write (2)
+# x - execute (1)
+
+# u - user
+# g - group
+# o - others
+# a - all
+
+# - remove permission
+# + add permission
+
+# examples (ugoa)
+chmod a+x file.txt
+chmod ug-w file1.txt file2.sh
+chmod g=u dir/

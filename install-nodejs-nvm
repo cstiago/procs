@@ -1,0 +1,16 @@
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# reopen terminal
+# verify nvm installation
+# 'which nvm' doesn't work, since nvm isn't an executable binary
+command -v nvm
+
+# install node version
+nvm install 22
+
+# use specific version of node
+nvm use 22
+
+# see node version
+node -v

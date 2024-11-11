@@ -1,0 +1,32 @@
+# https://medium.com/@satriajanaka09/setup-zsh-oh-my-zsh-powerlevel10k-on-ubuntu-20-04-c4a4052508fd
+
+# install zsh
+sudo apt install zsh
+
+# verify zsh installation
+zsh --version
+
+# get available shells (zsh as /usr/bin/zsh)
+cat /etc/shells
+
+# set zsh as current shell
+chsh -s /usr/bin/zsh
+
+# get current shell
+echo $SHELL
+
+# install ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+# run p10k configuration wizard
+p10k configure
+
+# install meslo nerd font (powerlevel10k)
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf

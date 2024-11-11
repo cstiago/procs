@@ -1,0 +1,12 @@
+# https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git
+
+# for a local repo, remove '--global' flag
+
+# set git username
+git config --global user.name "Tiago Cunha"
+
+# set git email
+git config --global user.email tiagocunha.me@gmail.com
+
+# get username config
+git config --global user.name

@@ -1,0 +1,8 @@
+# user: cstiago
+# repo: dotfiles
+
+# https
+git clone https://github.com/cstiago/dotfiles.git
+
+# ssh
+git clone git@github.com:cstiago/dotfiles.git
