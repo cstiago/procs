@@ -7,3 +7,5 @@ sudo apt install
 # build-essential - building tools (gcc...)
 # gdb - gnu debugger
 # python3
+# yarn
+# docker-compose
