@@ -8,7 +8,7 @@ sudo apt install gcc
 gcc --version
 
 # compile source code to executable
-gcc -o executable program.cpp
+gcc -o executable program.c
 
 # run executable
 ./executable

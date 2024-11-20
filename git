@@ -1,0 +1,42 @@
+# initialize git repo
+git init
+
+# stage files on the current
+git add .
+
+# see staging status
+git status
+git commit -m "message"
+
+# main - name of branch
+# origin - name of remote source
+
+# push changes to remote repo
+git push origin main
+
+# pull changes from remote repo
+git pull origin main
+
+# rename branch
+git branch -M main
+
+# checkout to existing branch
+git checkout branch
+
+# create new branch
+git checkout -b new-branch
+
+# reset unstaged changes to HEAD
+# -- for argument disambiguation
+# https://git-scm.com/docs/git-checkout#_argument_disambiguation
+git checkout -- file.txt # or
+git restore file.txt
+
+# stash changes
+git stash
+
+# bring stashed changes to working directory
+git stash pop
+
+# discard stashed changes
+git stash drop

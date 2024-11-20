@@ -1,0 +1,11 @@
+# initialize yarn project
+yarn init
+
+# install project dependencies
+yarn install # or just yarn
+
+# add dependency to package.json
+yarn add tsx
+
+# remove dependency to package.json
+yarn remove tsx
