@@ -1,1 +1,62 @@
 # #!/usr/bin/env bash
+
+# vim
+
+normal mode: <esc>
+visual mode: v
+
+copy (yank): y
+cut (delete): d
+paste: p
+
+insert at beginning of char: i
+insert at end of char (append): a
+insert at next line: o
+
+insert at beginning of line: I
+insert at end of line: A 
+
+replace char: r<char>
+delete char: x
+
+undo: u
+redo: <ctrl>r
+
+move cursor left: h
+move cursor down: j
+move cursor up: k 
+move cursor right: l
+
+move cursor n times: <n>[h|j|k|l]
+(2h, 4j, 6k, 8l)
+
+beginning of next word: w
+beginning of previous word: b
+end of word: e
+
+beginning of line: 0
+end of line: $
+
+move line up: ddkp
+move line down: ddp
+
+go to line n: :<n>
+save: :w
+quit: :q
+save and quit: :wq
+force quit: :q!
+save and force quit: :wq!
+
+# vimium
+
+firefox: https://addons.mozilla.org/pt-BR/firefox/addon/vimium-ff/
+chrome: https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
+
+normal mode: <esc>
+visual mode: v
+insert mode: i
+
+scroll left: h
+scroll down: j
+scroll up: k
+scroll right: l
