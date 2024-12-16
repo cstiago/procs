@@ -1,0 +1,10 @@
+zsh
+vim
+neovim # execute as nvim
+git
+build-essential # building tools (gcc, make etc.)
+gdb # gnu debugger
+python3
+yarn
+docker-compose
+tmux
