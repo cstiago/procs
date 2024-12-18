@@ -1,0 +1,5 @@
+# List fonts
+fc-list
+
+# Add fonts to cache
+sudo fc-cache -fv
