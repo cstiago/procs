@@ -1,0 +1,9 @@
+curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
+
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Postman
+Exec=/usr/local/Postman/Postman
+Icon=/usr/local/Postman/app/icons/icon_128x128.png
+Type=Application
+

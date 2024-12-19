@@ -1,0 +1,38 @@
+# https://www.tug.org/texlive/doc/texlive-en/texlive-en.pdf
+
+1. Make sure that you can run the tex program in the first place:
+> tex --version
+
+2. Process a basic LATEX file, generating PDF:
+> pdflatex sample2e.tex
+
+3. Preview the PDF file, for example:
+> xpdf sample2e.pdf
+
+4. Of course you can still generate TEX’s original DVI format:
+> latex sample2e.tex
+
+5. And preview the DVI online:
+> xdvi sample2e.dvi # Unix
+> dviout sample2e.dvi # Windows
+
+6. To create a PostScript file from the DVI:
+> dvips sample2e.dvi -o sample2e.ps
+
+7. Or to create PDF from the DVI, an alternate path to using pdfTEX (or XeTEX or
+LuaTEX) which can be useful sometimes:
+> dvipdfmx sample2e.dvi -o sample2e.pdf
+
+8. Other standard test files you may find useful in addition to sample2e.tex:
+small2e.tex A simpler document than sample2e, to reduce the input size if
+you’re having troubles.
+testpage.tex Test if your printer introduces any offsets.
+nfssfont.tex For printing font tables and tests.
+testfont.tex Also for font tables, but using plain TEX.
+story.tex The most canonical (plain) TEX test file of all. You must type ‘\bye’
+to the * prompt after ‘tex story.tex’.
+
+9. If you have installed the xetex package, you can test its access to system fonts as
+follows:
+> xetex opentype-info.tex
+
