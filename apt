@@ -1,0 +1,11 @@
+# get package candidate info
+apt policy <package>
+
+# list package dependencies, conflicts recommendations and suggestions
+apt depends <package>
+
+# install package
+sudo apt install <package>
+
+# remove package
+sudo apt purge <package>

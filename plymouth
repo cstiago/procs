@@ -1,0 +1,11 @@
+# remove theme alternative
+$ sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/theme.plymouth
+
+# install theme alternative
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/theme/theme.plymouth 800
+
+# set theme alternative
+sudo update-alternatives --set default.plymouth /usr/share/plymouth/themes/theme/theme.plymouth
+
+# update initramfs
+sudo update-initramfs -u

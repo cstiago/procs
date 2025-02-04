@@ -8,6 +8,7 @@ git add .
 git status
 git commit -m "message"
 
+# defaults
 # main - name of branch
 # origin - name of remote source
 
@@ -41,15 +42,42 @@ git stash pop
 # discard stashed changes
 git stash drop
 
-hint: You have divergent branches and need to specify how to reconcile them.
-hint: You can do so by running one of the following commands sometime before
-hint: your next pull:
-hint:
-hint:   git config pull.rebase false  # merge
-hint:   git config pull.rebase true   # rebase
-hint:   git config pull.ff only       # fast-forward only
-hint:
-hint: You can replace "git config" with "git config --global" to set a default
-hint: preference for all repositories. You can also pass --rebase, --no-rebase,
-hint: or --ff-only on the command line to override the configured default per
-hint: invocation.
+# count all commits from base to HEAD
+git rev-list --count HEAD
+
+# install filter-repo (filter-branch replacement)
+sudo apt install git-filter-repo
+
+# filter repo based on commits related to specific path
+git filter-repo --path dir/
+
+# filter repo using dir contents as root
+git filter-repo --subdirectory-filter module/
+
+# fiter repo using path and refs filters
+git filter-repo --path bin/ --refs main~50..main
+
+# filter repo excluding selected filters
+git filter-repo --path dir/ --invert-paths
+
+# rebase example preserving committer date
+git -c rebase.instructionFormat='%s%nexec GIT_COMMITTER_DATE="%cD" git commit --amend --no-edit' rebase -i --root
+
+# remove remote
+git remote remove origin
+
+# add remote (github example)
+git remote add origin git@github.com:user/repo.git
+
+# hint: You have divergent branches and need to specify how to reconcile them.
+# hint: You can do so by running one of the following commands sometime before
+# hint: your next pull:
+# hint:
+# hint:   git config pull.rebase false  # merge
+# hint:   git config pull.rebase true   # rebase
+# hint:   git config pull.ff only       # fast-forward only
+# hint:
+# hint: You can replace "git config" with "git config --global" to set a default
+# hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+# hint: or --ff-only on the command line to override the configured default per
+# hint: invocation.
