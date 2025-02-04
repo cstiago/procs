@@ -1,0 +1,12 @@
+# https://obsproject.com/download
+
+# add obs ppa
+sudo add-apt-repository ppa:obsproject/obs-studio
+
+# update
+sudo apt update
+
+# install obs (depends on fmmpeg)
+sudo apt install obs-studio
+
+# obs is also officially distributed as a flatpak on flathub

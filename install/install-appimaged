@@ -1,0 +1,17 @@
+# get appimage
+wget "https://github.com/AppImage/appimaged/releases/download/continuous/appimaged-x86_64.AppImage"
+
+# make appimage executable
+chmod +x appimaged-x86_64.AppImage
+
+# install appimaged
+./appimaged-x86_64.AppImage --install
+
+# uninstall appimaged
+./appimaged-x86_64.AppImage --uninstall
+
+# appimaged, continuous build (commit 8e248f5), build 223 built on 2020-07-25 06:35:43 UTC
+# * Please delete /home/user/.local/bin/appimaged
+# * Please delete /home/user/.config/autostart/appimagekit-appimaged.desktop
+# * To remove all AppImage desktop integration, run
+#   find ~/.local/share -name 'appimagekit_*' -exec rm {} \;
